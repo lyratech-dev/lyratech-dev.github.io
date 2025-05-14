@@ -13,16 +13,19 @@
           colors: {
             primary: '#5F67AF',
           },
+          backgroundImage: {
+            'hero-pattern': 'linear-gradient(to top left, #5F67AF, #8D94DC, #DDE0FF)',
+          },
         },
       },
     };
   </script>
-  <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script> <!-- Cambia "yourkit.js" por tu propio código de FontAwesome -->
+  <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script> <!-- Reemplaza con tu kit -->
 </head>
-<body class="bg-gray-100 text-gray-900 font-sans">
+<body class="bg-hero-pattern bg-fixed bg-cover text-gray-900 font-sans">
 
   <!-- Header -->
-  <header class="bg-white shadow-md py-4 px-6">
+  <header class="bg-white bg-opacity-90 shadow-md py-4 px-6">
     <div class="max-w-7xl mx-auto flex items-center justify-between">
       <div class="flex items-center space-x-4">
         <img src="assets/favicon.png" alt="Logo" class="h-10 w-10 object-contain" />
@@ -35,34 +38,34 @@
   </header>
 
   <!-- Main -->
-  <main class="max-w-7xl mx-auto py-10 px-6">
-    <div class="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
+  <main class="max-w-7xl mx-auto py-12 px-6">
+    <div class="grid gap-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center">
       <!-- Proyecto 1 -->
-      <a href="https://avaliadentalgroup.com/" target="_blank" class="bg-white rounded-xl shadow hover:shadow-lg p-6 transition duration-300 w-full max-w-sm">
+      <a href="https://avaliadentalgroup.com/" target="_blank" class="bg-white rounded-2xl shadow-lg hover:shadow-xl p-6 transition duration-300 w-full max-w-sm">
         <h2 class="text-xl font-semibold mb-2 text-primary"><i class="fas fa-tooth mr-2"></i>Avalia Dental Group</h2>
         <p class="text-sm text-gray-600">Sitio web corporativo para una clínica dental.</p>
       </a>
 
       <!-- Proyecto 2 -->
-      <a href="https://verderaiz.com.mx/" target="_blank" class="bg-white rounded-xl shadow hover:shadow-lg p-6 transition duration-300 w-full max-w-sm">
+      <a href="https://verderaiz.com.mx/" target="_blank" class="bg-white rounded-2xl shadow-lg hover:shadow-xl p-6 transition duration-300 w-full max-w-sm">
         <h2 class="text-xl font-semibold mb-2 text-primary"><i class="fas fa-seedling mr-2"></i>Verde Raíz</h2>
         <p class="text-sm text-gray-600">Blog y dashboard para una empresa de productos naturales.</p>
       </a>
 
       <!-- Proyecto 3 -->
-      <a href="https://nuova-vita.netlify.app/" target="_blank" class="bg-white rounded-xl shadow hover:shadow-lg p-6 transition duration-300 w-full max-w-sm">
+      <a href="https://nuova-vita.netlify.app/" target="_blank" class="bg-white rounded-2xl shadow-lg hover:shadow-xl p-6 transition duration-300 w-full max-w-sm">
         <h2 class="text-xl font-semibold mb-2 text-primary"><i class="fas fa-heart mr-2"></i>Nuova Vita</h2>
         <p class="text-sm text-gray-600">Landing page para una clínica de fertilidad.</p>
       </a>
 
       <!-- Proyecto 4 -->
-      <a href="https://mindscope-landing.netlify.app/" target="_blank" class="bg-white rounded-xl shadow hover:shadow-lg p-6 transition duration-300 w-full max-w-sm">
+      <a href="https://mindscope-landing.netlify.app/" target="_blank" class="bg-white rounded-2xl shadow-lg hover:shadow-xl p-6 transition duration-300 w-full max-w-sm">
         <h2 class="text-xl font-semibold mb-2 text-primary"><i class="fas fa-brain mr-2"></i>Mindscope</h2>
         <p class="text-sm text-gray-600">Landing page para una app de salud mental.</p>
       </a>
 
       <!-- Proyecto 5 -->
-      <a href="https://plenus.edu.mx/hopemun/" target="_blank" class="bg-white rounded-xl shadow hover:shadow-lg p-6 transition duration-300 w-full max-w-sm">
+      <a href="https://plenus.edu.mx/hopemun/" target="_blank" class="bg-white rounded-2xl shadow-lg hover:shadow-xl p-6 transition duration-300 w-full max-w-sm">
         <h2 class="text-xl font-semibold mb-2 text-primary"><i class="fas fa-graduation-cap mr-2"></i>HopeMun</h2>
         <p class="text-sm text-gray-600">Sitio web de modelo de Naciones Unidas para una universidad.</p>
       </a>
@@ -70,8 +73,8 @@
   </main>
 
   <!-- Footer -->
-  <footer class="text-center text-sm text-gray-500 py-6">
-    Hecho con 💻 por LyraTech — <a href="mailto:lyratech.dev@example.com" class="underline text-primary hover:text-primary/80">Contacto</a>
+  <footer class="text-center text-sm text-white py-6 bg-primary bg-opacity-90">
+    Hecho con 💻 por LyraTech — <a href="mailto:lyratech.dev@example.com" class="underline hover:text-white/80">Contacto</a>
   </footer>
 
 </body>
